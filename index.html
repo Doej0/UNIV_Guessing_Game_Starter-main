@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&display=swap"
+      rel="stylesheet" />
+      <script src="js/guessing-game.js" defer></script>
+</head>
+
+<body onload="guessingGame()">
+    <header>
+        <h1>My Guessing Game</h1>
+    </header>
+    <main class="grid">
+        <h2 class="title subtitle">Guess a number between 1 - 100</h2>
+        <div class="guess">
+            <input id="players-guess" type="number" min="1" max="100" style="text-align: center" />
+            <button type="button" id="submit">Submit</button>
+        </div>
+        <div class="guess-list">
+            <div class="guess-card"></div>
+            <div class="guess-card"></div>
+            <div class="guess-card"></div>
+            <div class="guess-card"></div>
+            <div class="guess-card"></div>
+        </div>
+        <div class="hints">
+            <p id="status">Hints will appear here</p>
+        </div>
+       
+        <div class="controls">
+            
+            <button type="button" id="reset">Replay</button>
+            <!--<button type="button" id="hint">Hint</button>-->
+        </div>
+    </main>
+</body>
+
+</html>
